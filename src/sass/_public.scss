@@ -203,6 +203,7 @@ img{
     width: 100%;
     background: #fc002d;
     height: 35px;
+
     .nav{
         width: 1200px;
         margin: 0 auto;
@@ -223,6 +224,7 @@ img{
             line-height: 35px;
             font-size: 16px;
             color: #fff;
+
         }
     }
     .nav-category-box{
@@ -231,6 +233,7 @@ img{
         left: 0;
         top: 35px;
         width: 230px;
+        z-index: 9999;
     }
     .nav-category-box.in-home{
         display: block!important;
@@ -238,30 +241,39 @@ img{
     .nav-item{
         float: left;
         width: 115px;
-        height: 35px;
         line-height: 35px;
         color: #fff;
         font-size: 16px;
         text-align: center;
         text-decoration: none;
     }
-    .numberIndex{
+    .nav-item{
         position: relative;
     }
 }
-.nav-item .numberIndex #numberr{
-    display: block;
-    text-decoration: none;
-    color: yellow;
-    z-index: 10000;
-    width: 30px;
-    height: 50px;
-    background: yellow;
+.index{
+    width: 115px ;
+    position: absolute;
+    top: 35px;
+    right: 385px;
+    background:red;
+    z-index: 9999;
+    // display: none;
+    padding: 2px 0;
+    height: 140px;
+    line-height: 35px;
+    text-align: center;
+    li a{
+        color: #fff;
+        font-size: 16px;
+        width: 115px;
+        display: inline-block;
 
+    }
 }
-
-
-
+.index li:hover a{
+    background: #df022d;
+}
 
 .common-nav .nav-item:hover {
     background: #df022d;
@@ -376,14 +388,4 @@ img{
             color: #333;
         }
     }
-}
-.common-nav .numberIndex{
-    content: "";
-    width: 0;
-    height: 0;
-    border: 5px solid rgba(0,0,0,0);
-    border-top-color: #fff;
-    position: absolute;
-    top: 15px;
-    right: 10px;
 }

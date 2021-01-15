@@ -1,1 +1,9 @@
 @import "public";
+.swiper-container {
+    width: 730px;
+    height: 390px;
+    z-index: 1;
+    .swiper-pagination-bullet-active{
+         background-color: red;
+    }
+}

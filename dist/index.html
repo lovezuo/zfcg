@@ -5,6 +5,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="../dist/css/index.min.css">
+    <link rel="stylesheet" href="../dist/css/swiper-3.4.2.min.css">
+    <script src="../dist/js/swiper-3.4.2.min.min.js"></script>
 </head>
 <body>
     <!-- header_top -->
@@ -38,7 +40,7 @@
                     <div class="search-input">
                         <input type="text" maxlength="50" placeholder="找找您想要的产品">
                     </div>
-                    <a href="#" class="button">搜 索</a>
+                    <a href="https://www.baidu.com" class="button">搜 索</a>
                 </div>
                 <div class="search-bottom">
                     <a href="#" target="_blank">激光打印机</a>
@@ -642,16 +644,60 @@
             <a href="#" target="_blank" class="nav-item">政府采购</a>
             <a href="#" target="_blank" class="nav-item">企业采购</a>
             <a href="#" target="_blank" class="nav-item">福利采购</a>
-            <a href="#" target="_blank" class="nav-item .numberIndex">
+            <a href="#" target="_blank" class="nav-item" id="nav-itemm">
                 中在指数
-                <div id=numberr">
-                    <a href="#">价格指数</a>
-                    <a href="#">销量指数</a>
-                    <a href="#">交易指数</a>
-                    <a href="#">品牌指数</a>
+                <div class="index">
+                        <li><a href="#">价格指数</a></li>
+                        <li><a href="#">销量指数</a></li>
+                        <li><a href="#">交易指数</a></li>
+                        <li><a href="#">品牌指数</a></li>
                 </div>
             </a>
         </div>
+        <!-- 轮播图 -->
+<div class="swiper-container">
+    <div class="swiper-wrapper">
+        <div class="swiper-slide"><img src="../dist/img/banner1.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="../dist/img/banner2.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="../dist/img/banner3.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="../dist/img/banner4.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="../dist/img/banner5.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="../dist/img/banner6.jpg" alt=""></div>
+        <div class="swiper-slide"><img src="../dist/img/zol_focus.jpg" alt=""></div>
     </div>
+    <!-- 如果需要分页器 -->
+    <div class="swiper-pagination"></div>
+        <script language="javascript"> 
+            var mySwiper = new Swiper('.swiper-container',{
+            pagination : '.swiper-pagination',
+            // pagination : '#swiper-pagination1',
+            })
+        </script>
+    
+    <!-- 如果需要导航按钮 -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+    
+      <div class="swiper-button-next swiper-button-white"></div>
+      <div class="swiper-button-prev swiper-button-white"></div>
+    <!-- 如果需要滚动条 -->
+    <div class="swiper-scrollbar"></div>
+</div>
+<script language="javascript"> 
+    var mySwiper = new Swiper('.swiper-container',{
+    prevButton:'.swiper-button-prev',
+    nextButton:'.swiper-button-next',
+    })
+    </script>
+    <script>
+        var mySwiper = new Swiper('.swiper-container', {
+          autoplay: 3000
+        });
+        </script>
+    </div>
+
+
+
+
 </body>
 </html>
