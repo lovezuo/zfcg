@@ -237,7 +237,7 @@ img{
         z-index: 9999;
     }
     .nav-category-box.in-home{
-        display: block!important;
+        display: block;
     }
     .nav-item{
         float: left;
@@ -295,8 +295,8 @@ img{
 }
 .category-item {
     padding-left: 30px;
-    height: 36px;
-    line-height: 36px;
+    height: 35px;
+    line-height: 35px;
     font-size: 13px;
     color: #333;
     cursor: default;
