@@ -4,7 +4,8 @@ body,h1,h2,h3,h4,h5,h6,p,ul,ol,dl,dd,hr,ul,ol,td,input,option,textarea{
 	font-size: 12px;
 }
 body{
-	font-family: "微软雅黑";
+    font-family: "微软雅黑";
+    background: #F4F4F4;
 }
 li{
 	list-style: none;
@@ -258,7 +259,7 @@ img{
     right: 385px;
     background:red;
     z-index: 9999;
-    // display: none;
+    display: none;
     padding: 2px 0;
     height: 140px;
     line-height: 35px;
@@ -389,3 +390,74 @@ img{
         }
     }
 }
+// 底部
+.footerr{
+    // position: absolute;
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    background: #302e2e;
+    height: 140px;
+    overflow: hidden;
+    .footer-wrap{
+        width: 1200px;
+        height: 100px;
+        margin: 0 auto;
+        padding: 20px 0;
+        img{
+            vertical-align: middle;
+        }
+    }
+    .qrcode{
+        float: right;
+        img{
+            width: 80px;
+            height: 80px;
+        }
+    }
+    .concat{
+        margin-top: 20px;
+        height: 24px;
+        line-height: 24px;
+        overflow: hidden;
+        color: #999;
+        span{
+            display: inline-block;
+            margin-right: 10px;
+            vertical-align: top;
+        }
+        .foot-icon{
+            width: 24px;
+            height: 24px;
+            border-radius: 50%;
+            .footer .concat span{
+                display: inline-block;
+                margin-right: 10px;
+                vertical-align: top;
+            }
+        }
+        .tel-text{
+            font-size: 14px;   
+            font-weight: 700;
+        }
+        .tel{
+            font-size: 18px;
+            color: #fc002d;
+        }
+    }
+    .copy{
+        margin-top: 10px;
+        line-height: 18px;
+        color: #999;
+        display: block;
+        overflow: hidden;
+        span{
+            float: left;
+            margin-right: 15px;
+        }
+    }
+}
+.footer .footer-wrap img{
+    vertical-align: middle;
+}
+
