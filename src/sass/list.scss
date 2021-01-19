@@ -2,6 +2,10 @@
 .category-list{
     display: none;
 }
+body{
+    background: #fff;
+    z-index: 99999;
+}
 .nav-category .nav-category-head:hover{
     display: block;
 }
@@ -132,7 +136,7 @@
 .filter-item p:hover {
     color: red;
 }
-.morebtn[data-v-56633a74] {
+.morebtn{
     border: 1px solid #eee;
     margin-left: 30px;
     width: 52px;
@@ -146,4 +150,180 @@
     color: #666;
     font: 12px/22px Microsoft YaHei,"\5FAE\8F6F\96C5\9ED1";
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAwAAAAHBAMAAADOnLEXAAAABGdBT…YGtkAGljAGhlQBBgbRBCCHgYExrFQAJC8K4jAwsDgwMAAAcCMEU+7dT8AAAAAASUVORK5CYII=) no-repeat 10px 8px;
+}
+
+
+.toolbar{
+    position: relative;
+    background: #f8f8f8;
+    border-bottom: 1px solid #fc002d;
+    .sort-tab{
+        height: 36px;
+        line-height: 36px;
+        border: 1px solid #f0f0f0;
+        border-bottom: 0 none;
+    }
+    .mini-pager{
+        position: absolute;
+        right: 10px;
+        top: 7px;
+    }
+}
+.wrapper{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.toolbar .sort-tab .sort-tab-item.active{
+    cursor: default;
+    background: #fc002d;
+    color: #fff;
+}
+.toolbar .sort-tab .sort-tab-item{
+    float: left;
+    position: relative;
+    width: 140px;
+    color: #666;
+    font: 14px/36px Microsoft YaHei,"\5FAE\8F6F\96C5\9ED1";
+    text-align: center;
+    padding: 1px 0 0;
+    height: 36px;
+    margin: -1px 0 0;
+    z-index: 2;
+    cursor: pointer;
+}
+.mini-page{
+    height: 24px;
+    line-height: 24px;
+    .mini-total{
+        display: inline-block;
+        vertical-align: top;
+        font-size: 14px;
+        color: #666;
+    }
+    .mini-current-num{
+        color: #fc002d;
+    }
+    .mini-btn .mini-prev{
+        border-right: 0 none;
+        margin-left: 10px;
+    }
+    .mini-btn{
+        display: inline-block;
+        position: relative;
+        width: 28px;
+        height: 22px;
+        line-height: 22px;
+        vertical-align: top;
+        border: 1px solid #ddd;
+        font-size: 0;
+        color: #666;
+        cursor: not-allowed;
+        background: #f8f8f8;
+    }
+    .mini-btn .enable{
+        background: #fff;
+        cursor: pointer;
+    }
+}
+
+
+
+.goods-list{
+    padding-top: 10px;
+    li{
+        width: 220px;
+        float: left;
+        padding: 10px 10px 0;
+        margin-bottom: 24px;
+        .title{
+            margin: 8px 0 9px;
+            height: 40px;
+            display: -webkit-box;
+            -webkit-box-orient: vertical;
+            -webkit-line-clamp: 2;
+            overflow: hidden;
+            word-wrap: break-word;
+            word-break: break-all;
+            a{
+                height: 40px;
+                text-decoration: none;
+                line-height: 20px;
+                font-size: 12px;
+                color: #333;
+            }
+        }
+        .price-bar{
+            padding: 0 0 12px 0;
+            color: #fc002d;
+            .price{
+                height: 23px;
+                line-height: 23px;
+                font-size: 20px;
+                .price-mark{
+                    font-size: 16px;
+                }
+            }
+        }
+        .shopping{
+            width: 40px;
+            height: 22px;
+            line-height: 22px;
+            border-radius: 12px;
+            font-size: 12px;
+            float: right;
+            margin-right: 0;
+            position: relative;
+            text-align: center;
+            text-indent: 20px;
+            color: red;
+            cursor: pointer;
+        }
+    }
+}
+.wrapper{
+    width: 1200px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.pic{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    img{
+        position: absolute;
+        left: 0;
+        top: 0;
+        max-width: 100%;
+        max-height: 100%;
+        cursor: pointer;
+        transition: all 0.9s;
+    }
+}
+.goods-list li:hover{
+    transform: scale(1.1);
+    position:relative;
+    z-index:100;
+    -webkit-box-shadow: #ccc 0px 3px 3px;
+    -moz-box-shadow: #ccc 0px 3px 3px;
+    box-shadow: #ccc 0px 3px 3px;
+    position: relative;
+    margin-top: -3px;
+}
+.pic:before {
+    content: "";
+    display: block;
+    padding-top: 100%;
+    height: 0;
+    background: #fff;
+}
+.goods-list li .shopping:before {
+    content: "";
+    background: url(../../dist/img/gouwuche.png) no-repeat;
+    background-size: contain;
+    width: 14px;
+    height: 12px;
+    position: absolute;
+    top: 6px;
+    right: 0;
 }
